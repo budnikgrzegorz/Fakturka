@@ -1,0 +1,5 @@
+package model.invoice;
+
+public enum InvoiceType {
+    FAKTURA_VAT, FAKTURA_PROFORMA, FAKTURA_ZALICZKOWA, FAKTURA_ROZLICZENIOWA, FAKTURA_KORYGUJACA;
+}

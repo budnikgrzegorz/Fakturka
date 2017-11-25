@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="462.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.ProduktyController">
+  <children>
+    <Button fx:id="dodaj" layoutX="246.0" layoutY="402.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="200.0" text="Dodaj" />
+    <Button fx:id="edytuj" layoutX="246.0" layoutY="457.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Edytuj " />
+    <Button fx:id="usun" layoutX="365.0" layoutY="459.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="83.0" text="Usuń" />
+    <TableView fx:id="table" layoutX="28.0" layoutY="14.0" prefHeight="372.0" prefWidth="420.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="251.0" text="Nazwa" fx:id="nazwa" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="45.0" text="Miara" fx:id="miara" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="124.0" text="Cena jednostkowa" fx:id="cena" />
+      </columns>
+    </TableView>
+    <TextField id="nazwa" fx:id="nazwaPole" layoutX="28.0" layoutY="402.0" prefWidth="200.0" text="Nazawa" />
+    <TextField fx:id="cenaPole" layoutX="28.0" layoutY="470.0" prefWidth="200.0" text="cena" />
+    <MenuButton id="miara" fx:id="liczenie" layoutX="28.0" layoutY="437.0" mnemonicParsing="false" prefWidth="200.0" text="Miara">
+      <items>
+        <MenuItem mnemonicParsing="false" text="szt." fx:id="szt" />
+        <MenuItem mnemonicParsing="false" text="kpt" fx:id="kpt" />
+        <MenuItem mnemonicParsing="false" text="usł" fx:id="usl" />
+        <MenuItem mnemonicParsing="false" text="mb" fx:id="mb" />
+        <MenuItem mnemonicParsing="false" text="m2" fx:id="m" />
+      </items>
+    </MenuButton>
+  </children>
+</AnchorPane>

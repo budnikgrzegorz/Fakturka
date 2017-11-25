@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.IndexController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="600.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Faktura">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Nowa faktura" fx:id="nowaFaktura" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Ustawienia" fx:id="wiecej" />
+
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Kotrachenci" fx:id="kontrachenci" />
+        <Menu mnemonicParsing="false" text="Produkty" fx:id="produkty" />
+        <Menu mnemonicParsing="false" text="Raporty">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Wykresy" fx:id="wykresy" />
+            <MenuItem mnemonicParsing="false" text="Raporty" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Pane fx:id="pane" layoutX="0.0" layoutY="24.0" prefHeight="376.0" prefWidth="600.0" />
+  </children>
+</AnchorPane>
